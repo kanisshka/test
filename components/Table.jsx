@@ -106,10 +106,9 @@ const Table = ({ onRowClick }) => {
                         </tr>
                     </thead>
 
+                      
                     <tbody>
-                        {filteredData.length === 0 ? 
-                        <h4 className='font-main'>{err}</h4> :
-                            <>{filteredData.map((item) => {
+                            {filteredData.map((item) => {
                                 return (<tr key={item.id} onClick={() => handleRowClick(item)}>
                                     <td>{item.title}</td>
                                     <td>{item.price}</td>
@@ -123,7 +122,7 @@ const Table = ({ onRowClick }) => {
                                     <td>{item.rating.rate}</td>
                                 </tr>)
                             })}
-                            </>}
+                            
 
                     </tbody>
                 </table>
