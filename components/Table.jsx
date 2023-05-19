@@ -85,10 +85,10 @@ const Table = ({ onRowClick }) => {
                 />
                 <select value={filterValue} className="search-input" onChange={(e) => handleFilter(e.target.value)}>
                     <option value="">All</option>
-                    <option value="men's clothing">Men's clothing</option>
+                    <option value="men&apos;s clothing">Men's clothing</option>
                     <option value="jewelery">Jewelery</option>
                     <option value="electronics">Electronics</option>
-                    <option value="women's clothing">Women's clothing</option>
+                    <option value="women&apos;s clothing">Women's clothing</option>
                 </select>
             </div>
             <div className='table-container'>
